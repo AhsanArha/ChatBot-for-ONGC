@@ -17,7 +17,7 @@ For this, Run this once in your terminal:
 ## Usage
 Run : python train.py
 
-This will dump `data.pth` file.
+This will train the model with training data(i.e. intents.json) and will dump `data.pth` file.
 And then run : python app.py
 
 Then ChatBot will start running.
