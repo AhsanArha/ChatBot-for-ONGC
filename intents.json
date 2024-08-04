@@ -1,0 +1,832 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "ongc",
+      "patterns": [
+        "Tell me about ongc",
+        "Tell me something about ongc!",
+        "What is ongc?"
+      ],
+      "responses": [
+        "ongc is oil and natural gas corporation",
+        "It is public sector industry for oil"
+      ]
+    },
+    {
+      "tag": "EPINET",
+      "patterns": ["How can you help me?"],
+      "responses": ["I can help you in Data Viewing, Loading and Downloading"]
+    },
+    {
+      "tag": "EPINET_",
+      "patterns": ["what is year refrence of your knowledge?"],
+      "responses": ["It is EPINET Rel. 2020"]
+    },
+    {
+      "tag": "EPINET_login",
+      "patterns": ["How to Login to EPINET Portal?",
+                    "Login to EPINET Portal",
+                   "Process followed to login to EPINET Portal."
+      ],
+      "responses": [
+        "In order to access the E&P database login to EPINET portal (recommended browser is Google chrome).\nEPINET Portal address EPINET Site\nhttps://epinetddn.ongc.co.in Corporate EPINET Portal, Dehradun\nhttps://epinetjrt.ongc.co.in EPINET, Jorhat\nhttps://epinetmum.ongc.co.in EPINET, Mumbai\nhttps://epinetbrd.ongc.co.in EPINET, Baroda\nhttps://epinetchn.ongc.co.in EPINET, Chennai\nhttps://epinetkol.ongc.co.in EPINET, Kolkata\nLogin to the portal based on the approved user authentication.\nIf user account not available, in order to create new login account, download the user account creation from the EPINET\nHome page and submit the form duly approved to the regional epinet center or mail the same to epinet mailing address."
+      ]
+    },
+    {
+      "tag": "EPINET_1",
+      "patterns": [
+        "what are the modules that user can access from EPINET home page?"
+      ],
+      "responses": [
+        "Data Loader, Data Viewer, GTO, CEGDIS, e-Core Library, Utilities, HelpDesk"
+      ]
+    },
+    {
+      "tag": "EPINET_2",
+      "patterns": [
+        "what is Data Loader?",
+        "Data Loader"
+      ],
+      "responses": [
+        "Data Loader is to load data into EPINET"
+      ]
+    },
+    {
+      "tag": "EPINET_3",
+      "patterns": [
+        "what is Data Viewer?",
+        "Data Viewer?"
+      ],
+      "responses": [
+        " Data Viewer is to view Data well wise or based on list of wells, download Data, generate map for viewing and printing and data transfer module."
+      ]
+    },
+    {
+      "tag": "EPINET_4",
+      "patterns": [
+        "what is GTO?",
+        "GTO"
+      ],
+      "responses": [
+        " To generate, view and download Geo Technical Order"
+      ]
+    },
+    {
+      "tag": "EPINET_5",
+      "patterns": [
+        "what is CEGDIS?",
+        "CEGDIS"
+      ],
+      "responses": [
+        " viewing and downloading geo scientific reports generated across ONGC"
+      ]
+    },
+    {
+      "tag": "EPINET_6",
+      "patterns": [
+        "what is e-Core Library?",
+        "e-Core Library"
+      ],
+      "responses": [
+        "Database of physical core library and issue requisition for core sample studies"
+      ]
+    },
+    {
+      "tag": "EPINET_7",
+      "patterns": [
+        "what is Utilities?",
+        "Utilities"
+      ],
+      "responses": [
+        "Software tools related to wells, logs and seismic"
+      ]
+    },
+    {
+      "tag": "EPINET_8",
+      "patterns": [
+        "what is HelpDesk?",
+        "HelpDesk"
+      ],
+      "responses": [
+        "module for raising queries related to EPINET software and data."
+      ]
+    },
+    {
+      "tag": "Data_Viewer_1",
+      "patterns": [
+        "what are options in Data Viewer?",
+        "what are tabs in Data Viewer?",
+        "what are accesses in Data Viewer?",
+        "options in Data Viewer"
+      ],
+      "responses": [
+        "Data Viewer has options : Wells, Seismic, Lease, Documents, Facilities, Maps, Intprin Projects, Reports & Charts."
+      ]
+    },
+    {
+      "tag": "Data_Viewer_2",
+      "patterns": [
+        "what are wells in Data Viewer?",
+        "what can we do by wells in data viewer?",
+        "wells in Data Viewer"
+      ],
+      "responses": [
+        "Here is what we can do in wells :- \nSearching for a well \nSearching for a well data sub-class \nChecking Data Availability \nDownloading Report ."
+      ]
+    },
+    {
+      "tag": "Data_Viewer_3",
+      "patterns": [
+        "what is Lease in Data Viewer?",
+        "what can we do by lease in data viewer?",
+        "Lease in Data Viewer"
+      ],
+      "responses": [
+        "Listing and finding data in Lease, downloading and viewing in Log data."
+      ]
+    },
+    {
+      "tag": "Data_Viewer_4",
+      "patterns": [
+        "What is LAS Viewer?",
+        "LAS Viewer"
+      ],
+      "responses": [
+        "LAS file being  viewed using LAS HTML Viewer."
+      ]
+    },
+    {
+      "tag": "Data_Viewer_5",
+      "patterns": [
+        "What is Seismic Data in data viewer?",
+        "Seismic Data in data viewer",
+        "Seismic Data "
+      ],
+      "responses": [
+        "Seismic Data option is for Searching and Downloading.\nIt has these options : 3D Survey details, Download and View options ,3D SEGY Viewer, Preview of a 3D Inlines - Cross Lines"
+      ]
+    },
+    {
+      "tag": "GTO",
+      "patterns": [
+        "How to use GTO?"
+      ],
+      "responses": [
+        "Login to EPINET Portal https://epinetddn.ongc.co.in. Go to GTO Node. Click on Set Current Well and select the Well from the dropdown list. The Well name will be displayed under the Selected Well along with its message in the Message Box"
+      ]  
+    },
+    {
+      "tag": "GTO_Frozen",
+      "patterns": [
+        "what is gto frozen?",
+        "gto frozen"
+      ],
+      "responses": [
+                "This indicates that the GTO for this well has been approved. If this message does not appear in the message indicates that the GTO for the selected is under process and is not finalized."
+      ]   
+    },
+    {
+      "tag": "GTO_genrate",
+      "patterns": [
+        "How to generate GTO?",
+        "generate gto"
+      ],
+      "responses": [
+        "To Generate GTO, click on Generate GTO button and then click on Go to display the GTO on screen. It takes few seconds to generate and display. Have patience and wait for some time.\nThe Displayed GTO can now be downloaded either as pdf or jpg format file for further use. The above sequence can be followed to display and download GTO of other wells. Click on Exit once done."
+      ]
+    },
+    {
+      "tag": "R_C",
+      "patterns": [
+        "What are Reports and Charts?",
+        "Reports and Charts"
+      ],
+      "responses": [
+        "Reports is a simple, intuitive interface which provides advanced download options in a single-window. You can download all well data classes for multiple wells in a single interface. Download of documents, Raw and Composite logs are also possible. Reports is also connected with DV Maps through which all data can be visualised and downloaded."
+      ]
+    },
+    {
+      "tag": "Layouut",
+      "patterns": [
+        "What is layout?",
+        "What is layout in Reports and charts?",
+        "Discuss about layout buttons?",
+        "Layout"
+      ],
+      "responses": [
+        "It is a screenshot of the Reports interface. The interface has a 3-section layout with each layout buttons having specific functionality as shown below:-\n1. Search & Select 2. Save & Share 3. View & Export"
+      ]
+    },
+    {
+      "tag": "Layouut_btn_1",
+      "patterns": [
+        "What is  Search & Select layout button?",
+        "What is  Search & Select layout button in Reports and charts?",
+        "Discuss about  Search & Select layout buttons?",
+        "Search & Select layout button",
+        "Search & Select "
+      ],
+      "responses": [
+        "Search & Select\nThe select area allows you to search and browse the following data\n• Wells\n• Lease Data\n• 2D Survey & Navigation data\n• 3D Survey and Boundary data\n• Custom polygon and point data\nThe selection area also gives you multiple search options to filter wells or lease or seismic surveys according to your\ncriteria. The following search options are available:\nBasic quick-search\nThis is the basic search option available. This searches all well name columns (Release Name, Field Name and Proposed\nname) and quickly lists all results.\nMulti-item Search\nOften, there is a need to search for multiple items. The multi-search option can be used for the same. It can search for\nmultiple strings in multiple fields.\nCommon well filters\nFor filtering wells based on some commonly queried condition, 3 filters are given: Field, Formation and Well Log\nAfter selecting a filter, you can select the values based on which you want to filter wells and then click on Filter wells to\nsee the filtered result\nAdvanced well filtering\nAdvanced filters allow you to search for wells using customized conditions. Queries like the following are possible:\n• Wells passing through basement formation\n• Wells with depth between 3000 and 4000\n• Wells containing specific Lab data\nThe workflow to use advanced filters is as follows: Now, filter window opens at the left pane . Following are the options: Click + to specify condition and add it to filter. For e.g. Finally, click Apply Filter to see results: Multiple conditions can also be added. Match value has two options (when multiple conditions are added) • Any - Lists a well if any of the conditions are fulfilled • All - Lists a well only if all the listed conditions are fulfilled (This is the default filter option)"
+
+      ]
+    },
+    {
+      "tag": "Layouut_btn_2",
+      "patterns": [
+        "What is  Save & Share layout button?",
+        "What is  Save & Share layout button in Reports and charts?",
+        "Discuss about Save & Share layout buttons?",
+        "Save & Share layout button",
+        "Save & Share "
+      ],
+      "responses": [
+            "Save & Share\nOnce you select data of interest, you can click on the Add to List icon to move your selection to a DataList. A DataList in\nreports is similar to a shopping cart where you can keep adding all the data you are interested in.\nA DataList can contain any type of data that you can select – Well, Seismic or Lease or Polygon.\nEPINET User Manual | Advanced Data Viewing Tools 22\nAfter adding to DataList, you can save it for later use. You can save a public or a private DataList. Public data-lists are\nvisible to all users whereas private data-lists are available only for your use.\nTo retrieve a saved data-list, you can click on My Lists and Load a list"
+
+      ]
+    },
+    {
+      "tag": "Layouut_btn_3",
+      "patterns": [
+        "What is View & Export layout button?",
+        "What is View & Export layout button in Reports and charts?",
+        "Discuss about View & Export layout buttons?",
+        "View & Export layout button",
+        "View & Export "
+      ],
+      "responses": [
+                    "View & Export\nOnce you have added items to data-list, you can use the icons in View & Export area to retrieve data in various formats as per your need. Export options give you the following functionality:\ni. Export Well Data to Excel file (Reports)\nii. Create KML file for viewing in Google Earth\niii. Visualize Data online\niv. Export Documents and reports (WCR, FER, Core Reports, Lab reports, etc.)\nv. Export Log – Raw, Composite, Conditioned and Processed\nvi. Generate Charts\nvii. View list items in Map (for exporting Seismic, Shape or any other data through DTM Maps)\nExport Well Data to Excel\nEPINET User Manual | Advanced Data Viewing Tools 24\nCreate KML file for viewing in Google Earth\nIn the same window, after adding wells to data-list, you can generate KML file to see data in Google Earth\nBelow is a KML file in Google Earth showing Well workover data of Ahmedabad field wells\nEPINET User Manual | Advanced Data Viewing Tools 25\nVisualize Data online\nThe Visualize data option can also be used to see selected data online and plot columns\nOutliers (incorrect data)\nEPINET User Manual | Advanced Data Viewing Tools 26\nExport Documents and reports\nClicking on Documents would retrieve all documents available in EPINET related to the wells in the data-list. Then you can choose to download all files or only selected files (Total is limited to 50 files at a time)\nThe files are then copied to the EPINET fileserver from where you can retrieve using FileZilla or any other FTP client. To get access details of fileserver, you need to contact respective EPINET site.\nYou can see the status of download job and the path of downloaded files using View download Jobs option.\nEPINET User Manual | Advanced Data Viewing Tools 27\nDownload Job list and status of download job\nExport Log data\nThe steps for downloading log data is similar to downloading documents. You need to click on Log Data button instead of Documents and follow the rest of the steps to download files via fileserver.\nEPINET User Manual | Advanced Data Viewing Tools 28\nGenerate Charts\nAfter adding wells to data list, you can click on Charts in the export area to generate charts online.\nBelow are some charts that have been developed based on feedback from EPINET users. Apart from available charts, more can be developed and added by EPINET team as per user requirement. Below are screenshots for some charts:\nEPINET User Manual | Advanced Data Viewing Tools 29\nView in map\nAfter saving data-list, if you click on “View List items in Map button”, it sends the items in data-list to the DV Maps interface.\nNow, all the functionality of DV Maps is available for your dataset:\nEPINET User Manual | Advanced Data Viewing Tools 30\nMap and DTM\nEPINET User Manual | Advanced Data Viewing Tools 31\nFilter data\nAnd export\nEPINET User Manual | Advanced Data Viewing Tools 32\nSelected for transfer Target Application and project selection\nExport Log and completion status\nEPINET User Manual | Advanced Data Viewing Tools 33\nOpenWorks – Before Transfer\nOpenWorks – After Transfer"
+
+
+      ]
+    },
+    {
+      "tag": "well_data_loader",
+      "patterns": [
+        "what is well data loader?",
+        "Discuss about well data loader.",
+        "well data loader"
+      ],
+      "responses": [
+         "Well Data Loader\nDataloader is an excel-like interface for loading tabular data into EPINET Database. Most of\nthe data classes present in EPINET are loaded using this Dataloader. The steps for loading\nand managing data using the dataloader interface applies to the following data Classes:\n2022 Well Data - Basic well header info\n Geology Data\n Geology Lab data\n Chemistry Lab data\n Petrophysical Lab data\n PVT Lab Data\n CBM Data\n Drilling Data\n Reservoir Data\n EOR Data\nOverview\nDataLoader can be accessed from the EPINET homepage:\nEPINET User Manual | Well Data Loader 36\nBelow is a screenshot of the loader interface:\nLayout\nInitially, when DataLoader is opened, no form is selected. You need to click on tree items at\nthe left (as shown above) and then select a form to see the DataLoader interface."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_1",
+      "patterns": [
+        "what areas can be identified in the dataloader when a data class form is selected?",
+        "what options are shown in the dataloader when a data class form is selected?",
+        "data class in dataloader"
+      ],
+      "responses": [
+         "1. Toolbar\n Toolbar shows all operations available to user (as per permission). Hover mouse over each icon to show details,\n 2. Status Bar and Status Header. At any point of time, status header and status bar show the current status of grid. Error messages and operational steps are shown in status bar. If you’re not sure what to do next or which button to click, the status bar will be able to guide you.\n 3. Data Class Tree The Data class tree allows you to browse for a data class to find the data you need to load. You can click to expand categories or sub-categories (shown in bold font) and click on forms (Normal font) to see the data (as per permission available to you). You can use the search bar on top to search for a data class as shown in the screenshot at the right.\n 4. Data Display area . Data is displayed in the main display grid area. Columns in RED colour are mandatory columns while loading data. Columns in BLACK are normal columns and entry is optional. GREY columns are auto-filled by the system and user cannot enter data into those fields.\n 5. Data Count By default 500 most recently loaded data are fetched for display. The right end of the toolbar displays the fetched data count and the total data count.To load more data into view, click on Fetch More Data"
+      ]   
+    },
+    {
+      "tag": "well_data_loader__",
+      "patterns": [
+        "what operations can be done on data in well data loader?",
+        "Discuss about operations performed on data in well data loader.",
+        "operations in well data loader."
+      ],
+      "responses": [
+         "The operations are : loading new data, editing data, deleting data, Save / Load Draft, Template download, Load Data from Excel , Data Download, Visualize data, Browse Related Information, Search data, View Spatial Data in Map"
+      ]   
+    },
+    {
+      "tag": "well_data_loader_2",
+      "patterns": [
+        "how to load new data in well data loader?",
+        "Discuss about loading new data in well data loader.",
+        "loading new data in well data loader."
+      ],
+      "responses": [
+         "1. Click on Upload New Data \n2. Now you can start entering data in grid area as in an excel sheet. You can also copy-paste data from excel or use the load from Excel file option to select an excel file and bring data into the grid \n3. You can click on “Save” icon after you’re done. Errors during loading (if any) are shown in the status bar. If there are no errors in your data, the status bar shows a message asking you to commit changes to the database. Please note: If you do not click on “Confirm Load”, your data will NOT be saved and all changes will be lost. \n4. After committing, the loader switches to view mode and shows you the latest data that was loaded:"
+      ]   
+    },
+    {
+      "tag": "well_data_loader_3",
+      "patterns": [
+        "how to edit data in well data loader?",
+        "Discuss about editing data in well data loader.",
+        "editing data in well data loader."
+      ],
+      "responses": [
+         "1. Click on “Edit Data” Icon. Grid enters Edit Mode now. Double-click on a cell to edit its value.  Only columns in bold text can be edited. Columns that are greyed cannot be edited\n 2. Click on Save and then Commit to write changes to database. Errors during editing (if any) are displayed in red. Click on the cell to see the error message and correct the value."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_4",
+      "patterns": [
+        "how to delete data in well data loader?",
+        "Discuss about deleting data in well data loader.",
+        "deleting data in well data loader."
+      ],
+      "responses": [
+         "Deletion is intentionally designed to be a three-step operation to avoid accidental deletion of records \n1. First, you need to enter Delete Mode by clicking on delete icon \n2. Then, mark records for deletion by right clicking on records You can mark/unmark multiple records also .\n3. Finally, click on Delete and then Confirm to write changes to database. Errors while attempting to delete (if any) are displayed in red:"
+      ]   
+    },
+    {
+      "tag": "well_data_loader_5",
+      "patterns": [
+        "how to save or load draft data in well data loader?",
+        "Discuss about save or load draft in well data loader.",
+        "save or load draft in well data loader."
+      ],
+      "responses": [
+         "If you are in the midst of a loading task and have to leave for another work or if all data isnot available, you can save a temporary working draft and log out without losing your work.Later, you can retrieve the draft and continue loading data. To save a working draft, click onSave Draft and specify a name for the draft dataset. Later, you can click on Load Draft to load the saved draft and continue working."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_6",
+      "patterns": [
+        "how to Load Data from Excel in well data loader?",
+        "Discuss about Load Data from Excel in well data loader.",
+        "Load Data from Excel in well data loader."
+      ],
+      "responses": [
+         "To load data from excel file directly, click on the Load from Excel icon after entering load mode: .popup opens. You can click and choose an Excel file or drag-drop one into the selection area. After selecting the excel file, the interface allows you to reorder, insert or remove columns to match the loader column interface. When you click Finish, the reordered data is copied to loader form for loading into database."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_7",
+      "patterns": [
+        "how to Visualize data in well data loader?",
+        "Discuss about Visualize data in well data loader.",
+        "Visualize data in well data loader."
+      ],
+      "responses": [
+         "With any data in view, click on Visualize option to open the plot interface In the interface, you can plot any column against another column. Any data class in EPINET can be plotted with this plot tool directly accessible from DataLoader at the click of a button. Below is a screenshot showing VSP data that has been plotted. This can be used to do a quick Quality Check (QC) of any data that has been loaded."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_8",
+      "patterns": [
+        "how to Search data in well data loader?",
+        "Discuss about Search data in well data loader.",
+        "Search data in well data loader."
+      ],
+      "responses": [
+         "Clicking on search button in toolbar opens up the search tool which gives you all the options you need to search for data."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_9",
+      "patterns": [
+        "how to Template download in well data loader?",
+        "Discuss about Template download in well data loader.",
+        "Template download in well data loader."
+      ],
+      "responses": [
+         "Clicking on Download Excel Template gives you an excel file containing the loader form columns. This file can be used to arrange, format and prepare data in MS-excel before bringing to DataLoader interface."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_10",
+      "patterns": [
+        "how to Data Download in well data loader?",
+        "Discuss about Data Download in well data loader.",
+        "Data Download in well data loader."
+      ],
+      "responses": [
+         "The DataLoader also allows you to download EPINET data in Excel format. You can also search for a subset of data using search option and download only the result set."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_11",
+      "patterns": [
+        "how to Browse Related Information in well data loader?",
+        "Discuss about Browse Related Information in well data loader.",
+        "Browse Related Information in well data loader."
+      ],
+      "responses": [
+         "This feature allows user to lookup child data from a parent table/form. To browse for related data, right click on grid after selecting records for which you need to see related information This opens a new form showing all related data classes available for the selected data. Pick one and click on Fetch data to see related data in a new form."
+      ]   
+    },
+    {
+      "tag": "well_data_loader_12",
+      "patterns": [
+        "how to View Spatial Data in Map in well data loader?",
+        "Discuss about View Spatial Data in Map in well data loader.",
+        "View Spatial Data in Map in well data loader."
+      ],
+      "responses": [
+         "Visualize Spatial Data in Map This is available for tables containing shape information such as Wells, Lease, Seismic Surveys, etc. Whenever map viewing options are available, Orange coloured icons appear in the toolbar. Selecting items in the grid and click in the view icon would open the Map view and display the selected records. Special view options are also available for Deviation Data, Lease Data and Custom Polygon data (to view in map as well as to view shape and points) and for Seismic surveys."
+      ]   
+    },
+    {
+      "tag": "log_data_loader",
+      "patterns": [
+        "how to use log data loader?",
+        "Discuss about log data loader.",
+        "log data loader."
+      ],
+      "responses": [
+             "Log Data Loader\nOpen Regional Homepage of EPINET. Select Data Loader Module. To launch Logging Loader\nClick on ‘Log Data Loader’ under Logs Node.\nPerquisite: Java 7\nEnter your credentials:\nUserID and Password to login to Log Loader Page\nUsers must have Java 1.7 running on their Destops\nEnter Select button to choose Log files\nLAS/DLIS/LIS to be loaded in-house Log Loader Page\nSelect the file(s) from relevant folder from your desktop computer\nWe are choosing one merged log file of well named DMOH-4\nIn case of raw logs normally we can choose multiple files of same well to be loaded simultaneously.\nSelected file will be visible in the list.\nIn case you want to attach some other file(s) as attachment with Log data file, Press ‘Manage Attachment’ button.\nPress ADD button to add the attachment file.\nSelect the file to be attached.\nYou can view the attached file in the ‘Attached File’ column\nPress the ‘Preview’ button to view the log file before loading.\nPreview of Log file to be loaded.\nSelect Main file and Press ‘Edit’ Button to edit the log file.\nSelect the relevant UBHI from the ‘Select UBHI’ LOV\nSelect relevant Contractor name from the ‘Contractor’ LOV\nSelect relevant Project from ‘Target Project’ LOV.\nSelect ‘RAW’ option for original Logs and ‘EDITED’ for Merged and all kinds of edited logs.\nFinally select relevant ‘Curve Status’ LOV carefully and Press OK.\nFrom Main Loader Page, confirm the file(s) to be loaded.\nIn case you want to delete any file. Select the file and Press ‘Delete’ Button.\nIn case of many files, you can select ‘Set All’ option to pass same values to the selected files which were set for the main file.\nOnce all the parameters are set Press ‘Check Parameters’ button to review the basic parameters.\nPress ‘Validate’ button to validate the log data of the file.\nPress ‘Load’ button to load the Log data file(s) into the EPINET system.\nTo confirm successful loading and QC of log, launch EPINET Data Viewer module and view log curves of the well whose data has been loaded as shown below.\nSelect the curves loaded and press ‘Click to view Curve’ to view the curves to check the quality of data.\nEPINET LAS Viewer confirms loading of validated log data."
+
+      ]   
+    },
+    {
+      "tag": "seismic2d_data_loader",
+      "patterns": [
+        "how to use 2D Seismic Data Loader?",
+        "Discuss about 2D Seismic Data Loader.",
+        "2D Seismic Data Loader"
+      ],
+      "responses": [
+             "2D Seismic Data Loader\n This Module is aimed for the users to enable them to edit 2D/3D Seismic Data, Load Seismic data, Navigation data and after QC of\n files keep them for repository in EPINET\n  Step1: Editing of Seismic segy files\n  Step2: QC of SegY and navigation files.\n  Step3: Loading of seismic data at EPINET\n You can open Seismic loader by logging on to the fileserver:\n Or you can open Seismic loader from windows through the portal"
+
+      ]   
+    },
+    {
+      "tag": "seismic3d_data_loader",
+      "patterns": [
+        "how to use 3D Seismic Data Loader?",
+        "Discuss about 3D Seismic Data Loader.",
+        "3D Seismic Data Loader"
+      ],
+      "responses": [
+             "3D Seismic Data Loader \nThis Module is aimed for the users to enable them to: \n Edit 3D Seismic data after QC \n Load the Seismic data for repository in EPINET \n View the navigation and all segy files at EPINET \nAfter opening Seismic Loader, click on Files"
+      ]   
+    },
+    {
+      "tag": "document_loader",
+      "patterns": [
+        "how to use Document Loader?",
+        "Discuss about Document Loader.",
+        "Document Loader"
+      ],
+      "responses": [
+             "Document Loader \nThere are 2 document loaders. \nWeb-based (For small files) \nJava-based (For large files) \nThe web based loader is for files up to 4 MB. For larger files, the Java based loader can be used (Minimum Java version 7 required)"
+      ]   
+    },
+    {
+      "tag": "w_document_loader",
+      "patterns": [
+        "how to use web based Document Loader ?",
+        "Discuss about web based Document Loader .",
+        "web based Document Loader"
+      ],
+      "responses": [
+             "Document Loader - Web Based \nIn DataLoader, \nOpen Document Summary under Document \nA new search functionality is also added so that you may directly search for a form \n(Press Ctrl + F5 to clear and reload if not displaying properly) \nIn loader form, Choose Load Documents \nIn next page, first choose files to upload \nAnd click on Upload Files \nNOW, FILES ARE UPLOADED TO THE LOCATION SPECIFIED IN THE BASIC.JSON FILE \nThis happens in two stages (code is in epinet/loaderDocument.aspx): \n1. File is loaded to EPINETPortal/uploads folder in webserver \n2. Using PSCP, file is copied to target location on server  \nNow, comes the linking (File Association) \nClick on each file to enter details \nThe file can be associated with a well or lease block or 2d or 3d \nMultiple selection is possible \nClick on save after updating \nRepeat the process for each file in queue (2 files in this case) \nFinally, Click on Save all files"
+      ]   
+    },
+    {
+      "tag": "loading_polyg_data",
+      "patterns": [
+        "how to Load Polygon Data ?",
+        "Discuss about Loading Polygon Data .",
+        "Loading Polygon Data"
+      ],
+      "responses": [
+             "Loading Polygon Data \nPolygon data loading is applicable for 2 forms: Lease Data and Custom Polygon. \nLoading polygon (for lease or custom polygon) involves 2 steps: \n1. Creating header \n2. Adding points \n1. Creating Header \nOpen Lease Header or Polygon Data to enter details header \n2. Adding points \nSelect the ID corresponding to the Header entry and start adding points \nIMPORTANT: Points must be added in clockwise order \nOnce saved, the shape is automatically created in Database \nThe polygon can be viewed in Map or separate viewer \nThe orange icons in the form show the options \nDeviation Data Loader \nAdd New Survey Header \nNow, select the Survey and Click on Add Survey Points \nDeviation Data Loader opens. Data can be copy-pasted from excel into the grid \nThen, Click on Load Raw Data to load raw data into Database"
+      ]   
+    },
+    {
+      "tag": "remote_sens",
+      "patterns": [
+        "how to use Remote Sensing Data Loader?",
+        "Discuss about Remote Sensing Data Loader .",
+        "Remote Sensing Data Loader"
+      ],
+      "responses": [
+             "Remote Sensing Data Loader \n\nAccessing the Loader: \nAccessible at EPINETPortal under Data Loader \nOpen Remote Sensing Data \nAdding new data \nClick Upload Icon to enter metadata \nClick Save after entering metadata \nThe fields are checked and errors if any are displayed. \nIf everything is correct, Confirm icon appears. Click to complete the data entry \nThe page reloads to show new entry .\n\nLoading shape files: \nAfter loading metadata, click Attach Related Data to attach shape files \nClick on Open File Loader and choose files to upload and click Upload in next screen \nOnce complete, list of uploaded files are displayed \nLoading is not yet fully complete \nClick Continue to complete loading \nClick the link in the end to return to list of files \nSelect an item in list and click Preview to see the loaded shape file"
+      ]   
+    },
+    {
+      "tag": "map_intro",
+      "patterns": [
+        "what are Location Map - EPIMAPS?",
+        "what are Location Map ?",
+        "Discuss about Location Map - EPIMAPS",
+        "Location Map - EPIMAPS",
+        "Location Map ",
+        "EPIMAPS"
+      ],
+      "responses": [
+             "Location Map - EPIMAPS\nEPIMAPS is a java based application that can be used to draw shapes of data objects like wells, lines, leases, etc. from EPINET Database on a map which can later be used to generate plots as per scale. Although there are a lot of map-based applications (ArcGIS, etc.) available in the industry, it is cumbersome to import our customized data objects to view-based maps. EPIMAPS employs a layer-based, project centric approach focusing mainly on reusability (minor tweaks in older maps to generate newer ones by using data list), flexibility (import/export map - .pdf/.png) and customizations (custom-built maps depending on user) while maintaining data integrity (data is always fetched on-the-fly from database for display)"
+      ]   
+    },
+    {
+      "tag": "map_sitereq",
+      "patterns": [
+        "what are Site Requirements in Location Map - EPIMAPS?",
+        "what are Site Requirements in Location Map ?",
+        "Discuss about Site Requirements in Location Map - EPIMAPS",
+        " Site Requirements in Location Map - EPIMAPS",
+        " Site Requirements in Location Map ",
+        " Site Requirements in EPIMAPS"
+      ],
+      "responses": [
+             "Site Requirements\nAs EPINET caters to users from both ends of upstream sector (exploration as well as production), EPIMAPS has been developed using java and can be launched from both UNIX (workstation based systems) and WINDOWS systems. The application can be launched from any desktop which supports java 1.6 or above. Please make sure that adequate plot application like PDF Creator, PDF Complete, etc. are installed to generate plots in PDF.\n\nAlso, launching of EPIMAPS does not require any additional role to be assigned, if you have access to view data in Dataviewer; you are automatically granted role to create maps using EPIMAPS"
+      ]   
+    },
+    {
+      "tag": "map_instllssss",
+      "patterns": [
+        "what are Installation in Location Map - EPIMAPS?",
+        "what are Installation in Location Map ?",
+        "Discuss about Installation in Location Map - EPIMAPS",
+        " Installation in Location Map - EPIMAPS",
+        " Installation in Location Map ",
+        " Installation in EPIMAPS"
+      ],
+      "responses": [
+             "Installation\nRequired java programs are hosted in regional EPINET portal. It is advised to always use JNLP link to launch latest version from the portal directly."
+      ]   
+    },
+    {
+      "tag": "usage_map",
+      "patterns": [
+        "what are Usage of Location Map - EPIMAPS?",
+        "what are Usage of Location Map ?",
+        "Discuss about Usage of Location Map - EPIMAPS",
+        " Usage of Location Map - EPIMAPS",
+        " Usage of Location Map ",
+        " Usage of EPIMAPS"
+      ],
+      "responses": [
+             "Usage\na) Launching the application\nb) Setting frame for map\nc) Adding grid / graticule to Map\nd) Adding objects / layers to Map\ne) Add custom shapes to Map\nf) Selecting objects from map-view and tree-view\ng) Other map functions\nh) Plotting map"
+      ]   
+    },
+    {
+      "tag": "usage_a",
+      "patterns": [
+        "how to Launch the application in  Location Map - EPIMAPS?",
+        "what are Launching the application in Location Map ?",
+        "Discuss about Launching the application in Location Map - EPIMAPS",
+        "Launching the application in Location Map - EPIMAPS",
+        "Launching the application in Location Map ",
+        "Launching the application in EPIMAPS"
+      ],
+      "responses": [
+             "Launching the application\n1. Click on EPIMAPS icon\n2. “Keep” the .jnlp file\n3. Click on launch.jnlp\n4. Ignore warnings & Click on run\n5. Click on login button and enter credentials\n6. Create a new Project\n7. Only after addition of a project, we can add different layers like wells, lines, 3D surveys or polygons.\n\nBelow gives you a walkthrough of the EPIMAPS."
+      ]   
+    },
+    {
+      "tag": "usage_b",
+      "patterns": [
+        "how to Set frame for map in  Location Map - EPIMAPS?",
+        "what are Setting frame for map in Location Map ?",
+        "Discuss about Setting frame for map in Location Map - EPIMAPS",
+        "Setting frame for map in Location Map - EPIMAPS",
+        "Setting frame for map in Location Map ",
+        "Setting frame for map in EPIMAPS"
+      ],
+      "responses": [
+             "Setting frame for map\n1. Right click on Project and click on Define Frame Boundary which opens a dialog box\n2. The “Lower-left” and “Upper-right” rows specify the latitude and longitude values of diagonal corners of the Map to be plotted. By default, they are set to display the entire map of India; user must set them according to their need.\n3. A proper Coordinate Reference System (CRS) need to be chosen to plot the map. If user need to examine the parameters used by the Spheroid and Projection System used in the CRS, they can do the same by clicking the information button “i”.\n4. After specifying proper lat-long values and selecting a proper CRS, click on Set Frame to display on Map View Area of EPIMAPS.\n\nNote: EPINET Site - DB Admins should take care that appropriate CRS values are available in Database as per user requirement."
+      ]   
+    },
+    {
+      "tag": "usage_c",
+      "patterns": [
+        "how to Add grid or graticule to Map in  Location Map - EPIMAPS?",
+        "what are Adding grid or graticule to Map ?",
+        "Discuss about Adding grid / graticule to Map ",
+        "Adding grid or graticule to Map in Location Map - EPIMAPS",
+        "Adding grid / graticule to Map in Location Map ",
+        "Adding grid / graticule to Map in EPIMAPS",
+        "Adding graticule to Map",
+        "Adding grid to Map"
+      ],
+      "responses": [
+             "Adding grid / graticule to Map\n1. Click on Add Grid icon from map tool bar to show grid-lines / graticule (+) on map.\n2. Choose an appropriate Unit – Degree/Minute/Second.\n3. Specify interval in which grid need to occur on map.\n4. Click ok to display the grid on map view. To change the grid, repeat the procedure."
+      ]   
+    },
+    {
+      "tag": "usage_d",
+      "patterns": [
+        "how to Add objects or layers to Map in  Location Map - EPIMAPS?",
+        "what are Adding objects or layers to Map ?",
+        "Discuss about Adding objects / layers to Map ",
+        "Adding objects or layers to Map in Location Map - EPIMAPS",
+        "Adding objects / layers to Map in Location Map ",
+        "Adding objects / layers to Map in EPIMAPS",
+        "Adding layers to Map",
+        "Adding objects to Map"
+      ],
+      "responses": [
+             "Adding objects / layers to Map\n1. Choose an icon from map tool bar or Right click on project in project view and click on Insert > to add objects like wells, 2D lines, 3D surveys and leases\n2. Customized polygons, points and lines can also be added to map by selecting the following icon. The procedure for the same will be discussed in detail in the next section.\n3. In the dialog box that appears in EPIMAPS, specify the following:\nLayer name in “Save selection as” text field\nObject Type in “Select object”\nCRS and\nColor of layer using “Choose color” button\n4. The objects can be filtered using following four methods:\na. Select based on database search list: Here, the user need to choose his/her already saved data list from EPINET.\nClick on “Load from List” after selecting a data list\nA dialog box with values from the selected list is shown\nChoose required list and click on save selection\nb. Select based on polygon: If a customized polygon is already defined in the map, select the polygon and click on “Give Values” to get a list of objects that fall within the polygon.\nc. Select based on attributes: Every object is identified by different attributes. For eg. Wells can be categorized on basis of name, field they belong to, their current status, etc. Hence each object has different attributes, and through EPIMAPS; you can filter data objects based on these attributes. After selecting a particular attribute, click on “Give Values”. The figure shown alongside shows selection of leases of NELP category.\nd. Select based on query: In this selection, user can build customized queries as per requirement. If user does not know values in EPINET, click on attribute and then “Get Unique Values” and build a query in the query window. A little knowledge of ORACLE-SQL will assist user in better query-building.\n\n5. After selection of objects, click on “Display on Map” button to show the objects in Map View. A prompt to save this layer as data list will appear. This data list can be reused in Data viewer DTM module and Report & Charts module. After providing choice of data list saving, another dialog box informs about number of actual objects to be displayed on map view. Click OK. The layer will appear in project view under project name and those objects will be shown in Map view. Each object in a layer can be formatted by using the “Format <object>” option."
+      ]   
+    },
+    {
+      "tag": "usage_e",
+      "patterns": [
+        "how to Add custom shapes to Map in  Location Map - EPIMAPS?",
+        "what are Adding custom shapes to Map ?",
+        "Discuss about Adding custom shapes to Map ",
+        "Adding custom shapes to Map in Location Map - EPIMAPS",
+        "Adding custom shapes to Map in Location Map ",
+        "Adding custom shapes to Map in EPIMAPS",
+        "Adding custom shapes to Map"
+      ],
+      "responses": [
+             "Add custom shapes to Map\n1. Click on this icon from map toolbar OR Right Click on Project and click on “Custom Polygon…”\n2. In the dialog box, choose the shape – POLYGON / POINT / LINE.\n3. In the Custom Shape window, give a suitable polygon name which will be also the layer name (reflected in layer view). Select appropriate CRS, Input Type (whether coordinates are in order of Lat-Lon / Lon-Lat / X-Y / Y-X) and Format (Degree Decimal / Deg Min Sec / Meters)\n4. You can draw the shape directly on map view, the coordinates are automatically populated in the shape window.\n5. Otherwise if coordinates of shape is available, the same can be copied and pasted to the Vertices table in Custom Shape window. The Column Values must be tab – delimited to enable direct copy-paste of values from excel/notepad A 19 6 0 71 25 0 to Vertices Table. A sample format is given below: B 19 1 0 71 25 0 For E.g.: Select “Input Type” as Latitude-Longitude C 19 1 0 71 29 0 and “Format” is “Deg Min Sec”, then content that can be D 18 55 0 71 29 0 copied and pasted should be in following format. Click on E 18 55 0 71 42 0 “Add Row” button and click on first column and paste the A 19 6 0 71 25 0 text. Now click on Draw – the shape will appear on Map, if found OK, click OK to draw the shape on Map.\n6. After the shape is drawn in Map view, the layer name appears in project view. User can modify or insert further layers of Wells, Lines, surveys and leases inside the shape."
+      ]   
+    },
+    {
+      "tag": "usage_f",
+      "patterns": [
+        "how to Select objects from map-view and tree-view in  Location Map - EPIMAPS?",
+        "what are Selecting objects from map-view and tree-view in Location Map ?",
+        "Discuss about Selecting objects from map-view and tree-view in Location Map - EPIMAPS",
+        "Selecting objects from map-view and tree-view in Location Map - EPIMAPS",
+        "Selecting objects from map-view and tree-view in Location Map ",
+        "Selecting objects from map-view and tree-view in EPIMAPS",
+        "Selecting objects from map-view and tree-view "
+      ],
+      "responses": [
+             "Selecting objects from map-view and tree-view\n1. User can select and highlight objects in map for further detailed study. On clicking of any object in project view, the same will be highlighted in Map view.\n2. If you need to identify certain object from Map view, you have to enter to Select Mode, where cursor type changes to the crosshair cursor (┼). To enter into Select Mode, click on following icon in Map View."
+      ]   
+    },
+    {
+      "tag": "usage_g",
+      "patterns": [
+        
+        "what are Other map functions in Location Map ?",
+        "Discuss about Other map functions in Location Map - EPIMAPS",
+        " Other map functions in Location Map - EPIMAPS",
+        " Other map functions in Location Map ",
+        " Other map functions in EPIMAPS",
+        " Other map functions"
+      ],
+      "responses": [
+             "Other map functions\n1. Common map functions like zoom in, zoom out, back to normal state, pan, etc, has been added to map toolbar\n2. Also file operations such as create new, open old project and deletion of layer has been added to file toolbar"
+      ]   
+    },
+    {
+      "tag": "usage_h",
+      "patterns": [
+        "how to Plot map in  Location Map - EPIMAPS?",
+        "what are Plotting map in Location Map ?",
+        "Discuss about Plotting map in Location Map - EPIMAPS",
+        "Plotting map in Location Map - EPIMAPS",
+        "Plotting map in Location Map ",
+        "Plotting map in EPIMAPS",
+        "Plotting map"
+      ],
+      "responses": [
+             "Plotting map\n1. User can plot the map to PDF / Plotter / Printer using the print icon.\n2. On clicking the print icon, a window to set various features of map like thickness of coast, symbol-size of wells, color of label, symbols, etc. and other such features.\n3. Specify the name by which you want save these parameters in the “Title” text box.\n4. Provide an appropriate scale in the 1 : Box, estimated height and width of the plot is shown in inches. The actual height and width may vary as extra header and footer is added during actual plot, so user must consider while setting the scale."
+      ]   
+    },
+    {
+      "tag": "gto_genr",
+      "patterns": [
+        "how to generate gto ?",
+        "what are generating gtoin Location Map ?",
+        "Discuss about generating gto ",
+        "generating gto "
+      ],
+      "responses": [
+                 "GTO Generation\n1. EPINET Home Page\n2. Login\n3. Default page\n4. New Well Creation for GTO\nClick on button “New Well”, then type name of the well and click on “Add” button.\n5. Well header after new well creation\n6. Well Header\n7. Well header (continued)\n8. Geological & Geophysical data\nClick on button “Geol. & Geoph. Data”\n9. Sample Geology & Geophysical data loading (Prognosed Age)\nSelect “Prognosed Age” from drop down list under “Geol. & Geoph. Data”\n10. Sample Geology and Geophysical data loading (Prognosed Lithology)\nSelect “Prognosed Lithology” from drop down list under “Geol. & Geoph. Data”\n11. Mud Parameters data\nClick on button “Mud Parameters Data”\n12. Drilling Data\nClick on button “Drilling Data”\n13. Deviation Data loading\nClick on button “Deviation Data”\n14. Deviation Data processing\nClick on button “save” under “Deviation Data”\n15. General Remarks\nClick on button “General Remarks”\n16. Images upload\nClick on button “Images. Data”. Then “Choose File”, select image and “Upload file”\n17. Generate GTO\nClick on button “Generate GTO”. Select Depth Tick and Depth Annotation Interval. Click on button “GTO”.\n18. Generated GTO\n19. Freeze GTO\nAfter GTO data loading is complete, click on button “Freeze GTO” to freeze data loading/updating.\n20. Modify/ Extend GTO\nClick on button “Modified GTO/ Extended GTO” to modify or extend an existing GTO. These buttons are visible only when the original GTO data loading is freezed.\n21. Data Copy\nWhen data of one old well is to be used for creation of a new well then use option “Data Copy”. In this case “New Well” option is not required to be used for new well creation. “Data Copy” will create the new well as well as copy all the data (except deviation data, images & signatures) of old well to new well.\n22. Sample GTO output\n23. then we get ICE approved GTO"
+
+      ]   
+    },
+    {
+      "tag": "e_core_librry",
+      "patterns": [
+        "what are e-Core Library ?",
+        "Discuss about e-Core Library",
+        "e-Core Library"
+      ],
+      "responses": [
+                 "e-Core Library \nDescription \n• e-Core Library Portal is an application to search and retrieve the location of sub-surface samples in the Core \nLibraries of Assets, Basins and Institutes, pan-ONGC. \n• It is a web based application. \n• The sub-surface samples’ data are Core, SWC and Cuttings Data. \n• The application can also be used to know the multiple locations of the cores of the same well in different \ncore \nhouses. \n• The core indenting process is also mapped in this portal. \n• The portal has been linked to EPINET Data Viewer."
+
+      ]   
+    },
+    {
+      "tag": "e_core_hpage",
+      "patterns": [
+        "what are e-Core Library home page ?",
+        "Discuss about e-Core Library home page ",
+        "e-Core Library home page ",
+        "home page of e-Core Library"
+      ],
+      "responses": [
+                 "EPINET Home Page \nA user can have three privileges: Librarian privileges, Indenter privileges and Administrator privileges \nRight now the scree is logged in as Indentor. \nIf you login as Librarian, you’ll be able to see only the core houses of his concerned region. The core \nrepository \ninformation of the Institutes like KDMIPE, IRS, etc. will be available to all irrespective of the region of the \nlibrarian. \ne-Core Library Home Page \nIn the site synopsis menu, a user can see the SOP and summary details of the RGLs and core houses of all the \nregions. \nSearch options are available against each column for ease of access. That is, we have the privilege of \nsearching by well \nname, release name, block name, field name or state \nWell Name = Release Name \nTo see the location of the core in the core library \nThe menu lists various regions Eastern Region, Northern Region, Mumbai Region, Western Region, Southern Region, \nInstitutes, etc. \nDetails of the well whose cores are available in the core house is listed in the Well Details page \nAfter clicking the submit button, the user will see list of new requests in the table \nBy default, the request status is New Request and the core is Non-Returnable"
+
+      ]   
+    },
+    {
+      "tag": "utlty",
+      "patterns": [
+        "what are utilities ?",
+        "Discuss about utilities",
+        "utilities"
+      ],
+      "responses": [
+                 "Utilities \nEPINET Portal has online and offline utilities. Online utilities can be used on the Portal directly without \nhaving to download \nor install anything (e.g. Shape file viewer, CRS conversion, etc.). Offline utilities can be downloaded and \ncopied to \nworkstations for file-based operations (e.g. Change CRS for multiple SEGY files, Edit SEGY headers, etc.)"
+
+      ]   
+    },
+    {
+      "tag": "utlty_tp",
+      "patterns": [
+        "what are utilities types ?",
+        "Discuss about types of utilities",
+        "types of utilities"
+      ],
+      "responses": [
+                 "Below is a list of some utilities: \nGeneral Utilities \nLog Utilities \nSeismic Utilities"
+
+      ]   
+    },
+    {
+      "tag": "utlty_gen",
+      "patterns": [
+        "what are general utilities ?",
+        "Discuss about general utilities",
+        "general utilities"
+      ],
+      "responses": [
+                 "General Utilities \nMulti Point CRS Conversion Utility \nDirection Survey Calculator \nESRI Shape File Parser and Viewer \nESRI Shape File Generator online"
+
+      ]   
+    },
+    {
+      "tag": "utlty_lgggg",
+      "patterns": [
+        "what are log utilities ?",
+        "Discuss about log utilities",
+        "log utilities"
+      ],
+      "responses": [
+                 "Log Utilities \nLAS Viewer \nExample is HTML Las Viewer"
+
+      ]   
+    },
+    {
+      "tag": "utlty_ssss",
+      "patterns": [
+        "what are Seismic utilities ?",
+        "Discuss about Seismic utilities",
+        "Seismic utilities"
+      ],
+      "responses": [
+                 "Seismic Utilities \n1. SEGY Header Validation Tool \nDisplay Trace View EBCDIC Header \nView Binary Header \n2. SEGY Viewer \n3. SEGY CRS Converter \n4. Seismic Utility – 3D Seismic Data XY <-> In-line X-line Converter"
+
+      ]   
+    },
+    {
+      "tag": "hd-ft",
+      "patterns": [
+        "what are Help Desk Features ?",
+        "Discuss about Help Desk Features",
+        "Help Desk Features"
+      ],
+      "responses": [
+                 "Help Desk - Features \n• IPMSG Based Alerts \n• Direct Login and Integrated Login \n• Search Feature for old problems"
+
+      ]   
+    },
+    {
+      "tag": "hdesk",
+      "patterns": [
+        "what are Help Desk  ?",
+        "Discuss about Help Desk ",
+        "Help Desk "
+      ],
+      "responses": [
+                 "Helpdesk Escalation Matrix \nWorkflow \nFull Message – Detailed view \nPost New Issue \nAdd Comment \nFull Message Detail –With Options for User to Accept or Reject Solution Provided \nFilter / Search Past Posts based on Key Elements: \nSearch Past Posts based on some Text \nIPMSG Based Alert \nIP address needs to be specified in Profile Section by User\nChannels of Communication and Team Members:"
+
+      ]    
+    }
+    
+    
+  ]
+}
+
+
+
+   

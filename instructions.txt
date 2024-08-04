@@ -1,0 +1,23 @@
+## Installation
+
+# Create a virtual environment 'myenv'
+# Activate the virtual environment 
+    Mac / Linux: myenv/bin/activate
+    Windows:     myenv\Scripts\activate
+
+# Install PyTorch, nltk and other dependencies
+
+If you get an error during the first run, you also need to install `nltk.tokenize.punkt`:
+For this, Run this once in your terminal:
+    $ python
+    >>> import nltk
+    >>> nltk.download('punkt')
+
+
+## Usage
+Run : python train.py
+
+This will dump `data.pth` file.
+And then run : python app.py
+
+Then ChatBot will start running.
